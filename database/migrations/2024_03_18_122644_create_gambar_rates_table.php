@@ -11,13 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('detail_products', function (Blueprint $table) {
+        Schema::create('gambar_rates', function (Blueprint $table) {
             $table->id();
-            $table->uuid('product_id')->unique();
-            $table->boolean('is_preoder');
-            $table->integer('preoder_time')->nullable();
-            $table->text('detail_product');
-            $table->bigInteger('stock');
+            $table->integer('rate_id');
+            $table->text('gambar_rate');
             $table->timestamps();
         });
     }
@@ -27,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('detail_products');
+        Schema::dropIfExists('gambar_rates');
     }
 };

@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->uuid('product_id');
             $table->integer('user_id');
-            $table->integer('ulasan_id');
             $table->integer('rate');
             $table->text('rate_message');
             $table->timestamps();

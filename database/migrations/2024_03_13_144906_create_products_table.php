@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('nama_product');
             $table->bigInteger('harga');
             $table->integer('discount_id');
-            $table->bigInteger('stock');
+            $table->integer('merk_id');
+            $table->integer('etalase_id');
             $table->bigInteger('jmlh_pembelian');
             $table->timestamps();
         });
